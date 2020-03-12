@@ -6,9 +6,9 @@ This Helm plugin was created from the [Helm plugin](https://github.com/app-regis
 
 ## Install the Helm Quay Plugin
 
-First, Install the latest [Helm v3 release](https://github.com/kubernetes/helm#install).
+First, install the latest [Helm v3 release](https://github.com/kubernetes/helm#install).
 
-If you are an OSX user, quickstart with brew: `brew install kubernetes-helm`
+If you are a macOS user, quickstart with brew: `brew install helm`
 
 Next download and install the Quay plugin for Helm.
 
@@ -16,7 +16,6 @@ Next download and install the Quay plugin for Helm.
 ### Option 1: Install using `helm plugin install`
 
 ```shell
-# If you are asked for credentials, use your GitHub Enterprise Token as username and leave password blank.
 $ helm plugin install https://github.com/app-registry/quay-helmv3-plugin
 
 $ helm quay --help
