@@ -1,0 +1,18 @@
+name: "quay"
+version: "0.1.0"
+usage: "app-registry client to Helm"
+description: |-
+  This plugin provides Quay client to Helm v3.
+  usage:
+    $ helm quay login -u <username> quay.io
+    $ helm quay pull quay.io/charts/jenkins
+    $ helm quay push quay.io/<namespace>
+ignoreFlags: false
+useTunnel: false
+platformCommand:
+  - os: darwin
+    command: "$HELM_PLUGIN_DIR/cnr.sh"
+  - os: linux
+    command: "$HELM_PLUGIN_DIR/cnr.sh"
+  - os: windows
+    command: "powershell $HELM_PLUGIN_DIR/cnr.ps1"
