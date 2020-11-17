@@ -15,6 +15,8 @@ Next download and install the Quay plugin for Helm.
 
 ### Option 1: Install using `helm plugin install`
 
+> Please note that `helm quay --help` is necessary for finishing the installation!
+
 ```shell
 $ helm plugin install https://github.com/app-registry/quay-helmv3-plugin
 
@@ -24,6 +26,9 @@ downloading https://github.com/app-registry/appr/releases/download/v0.7.4/appr-o
 ```
 
 ### Option 2: Install using `git clone`
+
+> Please note that `helm quay --help` is necessary for finishing the installation!
+
 ```shell
 # export $HELM_PLUGINS environment variable
 $ eval `helm env`
